@@ -17,5 +17,5 @@ npm run build
 # build for production and view the bundle analyzer report
 npm run build --report
 
-Vue application deployed in EKS Kubernete cluster
+Vue application deployed in AWS EKS Cluster
 ```
