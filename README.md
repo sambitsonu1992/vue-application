@@ -33,7 +33,7 @@ c) Now push the docker image to the private or public repository i.e. Dockerhub 
 a) Create a Kubernetes cluster using AWS KOPS or EKS Control Plane with 2/3 core nodes depending on the requirement.
 b) Deploy Vue application using "kubernetes-vue-manifest" folder which consist of deployment & service yaml files. 
    Deployment file consist of image tag, container port & resources for CPU & RAM.
-   Service file consist of exposing the application by nodeport. (it can also exposed by load balancer as well)
+   Service file consist of exposing the application by nodeport for development & testing purpose. (it can also exposed by load balancer using ingress)
 ```
 
 ### Step:4 
