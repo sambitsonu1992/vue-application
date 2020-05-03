@@ -58,6 +58,19 @@ Note: Our Jenkinsfile is present in Github so it will build the code as steps me
 
 ![](sample-image/Screenshot-1.png)
 
+
+
+### Reference Link
+```
+> API Key used to fetch weather report.
+https://openweathermap.org/api
+
+Vue : 
+
+https://vue-loader-v14.vuejs.org/en
+http://vuejs-templates.github.io/webpack
+```
+
 ## Build Setup
 
 ``` bash
@@ -72,6 +85,4 @@ npm run build
 
 # build for production and view the bundle analyzer report
 npm run build --report
-
-Vue application deployed in AWS EKS Cluster...
 ```
