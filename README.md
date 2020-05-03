@@ -56,7 +56,7 @@ Note: Our Jenkinsfile is present in Github so it will build the code as steps me
 
 # Sample Image:
 
-![](sample-image/Screenshot-2.png)
+![](sample-image/Screenshot-1.png)
 
 ## Build Setup
 
