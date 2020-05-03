@@ -2,7 +2,7 @@
 
 > Weather app using Vue.js
 
-#Getting Started
+# Getting Started
 
 ```
 #clone repo 
