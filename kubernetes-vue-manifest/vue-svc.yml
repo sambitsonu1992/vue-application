@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+    name: vue
+spec:
+    selector:
+        app: frontend
+    ports:
+        - name: vue
+          protocol: TCP
+          port: 80
+    type: NodePort
+    
