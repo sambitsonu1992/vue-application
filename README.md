@@ -4,8 +4,8 @@
 
 #Getting Started
 
-#clone repo 
 ```
+#clone repo 
 #https://github.com/anandpatnaik2010/vue-application.git
 ```
 
