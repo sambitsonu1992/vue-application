@@ -54,7 +54,9 @@ Note: Our Jenkinsfile is present in Github so it will build the code as steps me
 
 
 
-## Installing
+# Sample Image:
+
+![](sample-image/Screenshot-2.png)
 
 ## Build Setup
 
