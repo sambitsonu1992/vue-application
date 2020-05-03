@@ -1,6 +1,13 @@
-# vue-project
+# Weather Vue
 
-> A Vue.js project
+> Weather app using Vue.js
+
+#Getting Started
+
+#clone repo 
+```
+#https://github.com/anandpatnaik2010/vue-application.git
+```
 
 ## Build Setup
 
