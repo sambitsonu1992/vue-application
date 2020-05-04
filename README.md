@@ -86,3 +86,7 @@ npm run build
 # build for production and view the bundle analyzer report
 npm run build --report
 ```
+### Selft Introduction
+```
+My introduction with json format is present in file "introduction.json"
+```
