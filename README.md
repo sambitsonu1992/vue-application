@@ -71,22 +71,26 @@ https://vue-loader-v14.vuejs.org/en
 http://vuejs-templates.github.io/webpack
 ```
 
-## Build Setup
-
-``` bash
-# install dependencies
-npm install
-
-# serve with hot reload at localhost:8080
-npm run dev
-
-# build for production with minification
-npm run build
-
-# build for production and view the bundle analyzer report
-npm run build --report
+### Self Introduction
 ```
-### Selft Introduction
-```
-My introduction with json format is present in file "introduction.json"
-```
+{
+  "firstname": "Anand",
+  "lastname": "Patnaik",
+  "age": 28,
+  "nationality": "Indian",
+  "native": "Berhampur, Odisha",
+  "education": "Bachelor in Computer Application",
+  "employer": "Quaero",
+  "designation": "DevOps Engineer",
+  "totalexperience": "4.3 years",
+  "hobbies": [
+    "Travelling",
+    "Playing PC games"
+  ],
+  "dream": [
+    "To make this world a better place!"
+  ],
+  "believes": [
+    "Travel round the world"
+  ]
+}```
