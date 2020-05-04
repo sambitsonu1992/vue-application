@@ -93,4 +93,4 @@ http://vuejs-templates.github.io/webpack
   "believes": [
     "Travel round the world"
   ]
-}```
+}
