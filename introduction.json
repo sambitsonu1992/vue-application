@@ -1,0 +1,21 @@
+{
+  "firstname": "Anand",
+  "lastname": "Patnaik",
+  "age": 28,
+  "nationality": "Indian",
+  "native": "Berhampur, Odisha",
+  "education": "Bachelor in Computer Application",
+  "employer": "Quaero",
+  "designation": "DevOps Engineer",
+  "totalexperience": "4.3 years",
+  "hobbies": [
+    "Travelling",
+    "Playing PC games"
+  ],
+  "dream": [
+    "To make this world a better place!"
+  ],
+  "believes": [
+    "Travel round the world"
+  ]
+}
