@@ -16,5 +16,5 @@ RUN rm -rf ./test
 RUN rm -rf ./src
 
 ENV PORT=80
-EXPOSE 80
+EXPOSE 8080
 CMD [ "npm", "start" ]
