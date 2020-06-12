@@ -94,4 +94,3 @@ http://vuejs-templates.github.io/webpack
     "Travel round the world"
   ]
 }
-Adding for testing
