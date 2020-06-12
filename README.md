@@ -1,4 +1,4 @@
-# Weather Vue
+# Weather Vue Application
 
 > Weather app using Vue.js 
 
