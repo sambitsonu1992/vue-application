@@ -13,9 +13,6 @@
               choice(
                   name: 'Component',
                   choices:"vue-app")
-              choice(
-                  name: 'Environment',
-                  choices:"test")
               string(
                   name: 'Branchname',
                   defaultValue:"master")
@@ -25,7 +22,7 @@
               steps {
                 echo 'Check out cdp on master'
                       cleanWs()
-                      checkout changelog: false, poll: false, scm: [$class: 'GitSCM', branches: [[name: '$Branchname']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[credentialsId: 'github', url: 'https://github.com/anandpatnaik2010/vue-application.git']]]
+                      checkout changelog: false, poll: false, scm: [$class: 'GitSCM', branches: [[name: '$Branchname']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[credentialsId: 'github', url: 'https://github.com/sambitsonu1992/vue-application.git']]]
                   script {
                       GIT_COMMIT_HASH = sh (script: "git rev-parse --short HEAD | tr '\n' ' '", returnStdout: true)
                       GIT_VERSION = sh (script: "git describe --tags", returnStdout: true)
@@ -35,9 +32,6 @@
                       echo "**************************************************"
                       sh "touch app-version.info"
                       sh "echo ${GIT_COMMIT_HASH} >> app-version.info"
-                      
-                      Namespace = "vue"
-                      echo "${Namespace}"
                   }
                 }
           }
@@ -55,12 +49,6 @@
             sh "docker push anandpatnaik/vue:${params.Environment}-$GIT_COMMIT_HASH"
 			echo 'Image Pushed to Docker Hub'
 			
-            
-            echo 'Deploying image vue-test to cluster'
-            sh "cd ~/.kube && cp ~/.kube/config.${params.Environment} config"
-            withCredentials([[$class: 'AmazonWebServicesCredentialsBinding', credentialsId: "$Namespace"]]) {
-            sh "kubectl set image deployment/vue vue=anandpatnaik/vue:${params.Environment}-$GIT_COMMIT_HASH -n $Namespace"
-            sh "> ~/.aws/credentials"
             }
           }
         }		
